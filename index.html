@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='script.js'></script>
+    
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type = "text/css" href = "style.css">
+    <style>
+     
+    </style>
+
+  </head>
+  <body>
+
+      <div id='app'>
+
+        <div id='headers'class = 'center'>
+          <!-- Title and subtitles! -->
+          <h1>Guessing Game!</h1>
+          <h2>Guess a number between 1 -100</h2>
+        </div>
+
+        <div class = 'center' id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input class='center' min = '1' max ='100' placeholder="#" id="player-input" maxlength="3" autofocus='autofocus'>
+            <button class= 'btn btn-success' id='submit'>Go!</button>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul>
+              <li class ='guess'>-</li>
+              <li class ='guess'>-</li>
+              <li class ='guess'>-</li>
+              <li class ='guess'>-</li>
+              <li class ='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button class = 'btn btn-danger' id='reset'>Reset</button>
+            <button class = 'btn btn-info' id='hint' >Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class = 'center'>
+
+        <div class = 'row'>
+          <div class='col-sm-4'>
+            <img class = 'img-responsive'src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Guessing Game by Vesna Tan</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img class = 'img-responsive' src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+  </body>
+</html>
